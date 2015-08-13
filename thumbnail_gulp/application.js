@@ -18,7 +18,7 @@ var options = {
 	};  
     var element = React.createElement(ThumbnailList, options); 
     React.render(element, document.querySelector('.target'));
- var Badge = React.createClass({displayName: "Badge", 
+ 	var Badge = React.createClass({displayName: "Badge",
     	render: function(){ 
     		return React.createElement("button", {className: "btn btn-primary", type: "button"}, 
 		        	this.props.title, " ", React.createElement("span", {className: "badge"}, this.props.number)

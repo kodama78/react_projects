@@ -7,10 +7,10 @@
 	<script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
 </head>
 <body>
-	<div class="add">
+	<div id="add">
 		<p>Goodbye World!</p>
 	</div>
-	<div class="add">
+	<div class="no">
 		<p>Goodbye World!</p>
 	</div>
 </body>
@@ -28,6 +28,6 @@
 	//ask reac to render the class
 	var element = React.createElement(hello_world);
 	//after class is rendered, place it in body tag
-	React.render(element, document.getElementsByClassName('add')[0]);
+	React.render(<hello_world></hello_world>, document.getElementById('add'));
 </script>
 </html>
