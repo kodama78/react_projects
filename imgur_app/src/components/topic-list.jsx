@@ -20,7 +20,7 @@ module.exports = React.createClass({
     },
     render: function () {
         return <div className="list-group">
-         
+
             {this.renderTopics()}
         </div>
     },
